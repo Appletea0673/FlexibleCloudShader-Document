@@ -27,8 +27,8 @@
 
 1. SceneのDepth Texture発行に関して  
 本商品のShaderはUnityの深度情報を利用しているため、使用する際は
-- Directional Light (Realtime Mode, Shadow)
-- [VUdon - Depth Buffer Toolkit](https://github.com/Varneon/VUdon-DepthBufferToolkit)
+	- Directional Light (Realtime Mode, Shadow)
+	- [VUdon - Depth Buffer Toolkit](https://github.com/Varneon/VUdon-DepthBufferToolkit)  
 のような手段でDepth Textureを発行してください。
 この仕様上、VRSNS上のアクセサリーなどアバターに使用にする場合は利用できないワールドがあるため注意してください。
 
