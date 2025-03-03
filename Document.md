@@ -1,12 +1,15 @@
-- Table of Content
-{:toc}
-
 # Flexible Cloud Shader(FCS)
 ![](Images/FlexibleCloudShader_thumbnail.png)  
 物理ベースのVolumetricで綺麗な雲を描画するShaderです！  
 分かりやすく説明すると、3Dモデルデータ等で使用されているメッシュのように表面のみの描画ではなく、中身の詰まった雲を描画できます！  
 そのため、Skyboxに描かれている雲とは違って立体的で、より実在感があります！  
 本Shaderの大きな特徴として、形と大きさを自由自在に操作できる機能を搭載しています！  
+##目次
+- [使い方](#使い方)
+	- [設置方法](#1.設置方法)
+	- [使用上の注意](#2.⚠️重要⚠️ 使用上の注意)
+	- [Shaderの設定項目の説明](#3.Shaderの設定項目の説明)
+- [仕様](#仕様)
 ## 使い方
 ### 1.設置方法
 ![](Images/Sample_Prefab.png)  
