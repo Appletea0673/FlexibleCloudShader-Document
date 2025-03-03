@@ -36,20 +36,20 @@
 
 2. Cameraのクリッピング距離の設定
 
-![](Images/Clipping_Failed.png)  
+	![](Images/Clipping_Failed.png)  
 
-    大きな雲を設置する場合にCameraのクリッピング距離を超えてしまい、正常に描画されない場合があるため
+	大きな雲を設置する場合にCameraのクリッピング距離を超えてしまい、正常に描画されない場合があるため
 
-![](Images/CameraClippingSettings.png)  
+	![](Images/CameraClippingSettings.png)  
 
-    **Clipping PlanesのFar**を十分な距離に設定してください。
+	**Clipping PlanesのFar**を十分な距離に設定してください。
 
 3. 透過オブジェクトとの干渉
 
 	| RenderQueue:3000 | RenderQueue:4000 |
 	|---|---|
 	|![](Images/RenderQueue3000_1.png)|![](Images/RenderQueue4000_1.png)|
-	|![](Images/RenderQueue3000_2.png)|![](Images/RenderQueue4000_1.png)|
+	|![](Images/RenderQueue3000_2.png)|![](Images/RenderQueue4000_2.png)|
 
 	雲が大きい透過オブジェクトであるため、Unityの仕様上他の透過オブジェクト(RenderQueueがTransparentのもの)との干渉が発生します。
 専門的な話をすると、本ShaderはZ Bufferを読んで深度計算を正確にしますが、TransparentのオブジェクトはZ Bufferに深度を書き込まないため、Mesh Rendererの前後関係から描画順を決定するUnityの仕様に頼らざるを得ないといった感じです。
