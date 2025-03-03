@@ -29,8 +29,9 @@
 本商品のShaderはUnityの深度情報を利用しているため、使用する際は
 	- Directional Light (Realtime Mode, Shadow)
 	- [VUdon - Depth Buffer Toolkit](https://github.com/Varneon/VUdon-DepthBufferToolkit)  
-のような手段でDepth Textureを発行してください。
-この仕様上、VRSNS上のアクセサリーなどアバターに使用にする場合は利用できないワールドがあるため注意してください。
+
+	のような手段でDepth Textureを発行してください。
+	この仕様上、VRSNS上のアクセサリーなどアバターに使用にする場合は利用できないワールドがあるため注意してください。
 
 	本来、VRChatの利用できないワールドで表示を切り替える設定を入れているのですが、VRChatのバグによって適切に切り替わらない問題があるため[バグ修正の投票](https://feedback.vrchat.com/bug-reports/p/vrc-camera-emits-inaccurate-depth-texture)にご協力ください。
 
