@@ -38,11 +38,11 @@
 
 ![](Images/Clipping_Failed.png)  
 
-	大きな雲を設置する場合にCameraのクリッピング距離を超えてしまい、正常に描画されない場合があるため
+    大きな雲を設置する場合にCameraのクリッピング距離を超えてしまい、正常に描画されない場合があるため
 
 ![](Images/CameraClippingSettings.png)  
 
-	**Clipping PlanesのFar**を十分な距離に設定してください。
+    **Clipping PlanesのFar**を十分な距離に設定してください。
 
 3. 透過オブジェクトとの干渉
 
@@ -66,7 +66,7 @@
 デフォルト設定から変更する必要があまりない項目については解説を省いています。  
 また、角度設定はすべてradianです。
 
-- Textures
+- Textures  
 この項目では雲生成に使うNoiseを読み込ませます。仕様を理解して自分でTextureを描ける猛者以外はPrefabのデフォルト状態で利用してください。
 - Common
 雲の共通設定です。
@@ -114,7 +114,7 @@ Shader側でPosition、Rotation、Scaleを調整できます。
 		- Triangle : 三角
 		- Torus : ドーナツ
 		- Heart : ハート
-		- Star : 星
+		- Star : 星  
 	が選択できます。
 - Detail Settings  
 雲の細かな凹凸に関する設定です。
