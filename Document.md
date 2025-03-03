@@ -1,5 +1,5 @@
 # Flexible Cloud Shader(FCS)
-![](Images/Flexible Cloud Shader_thumbnail.png)  
+![](Images/FlexibleCloudShader_thumbnail.png)  
 物理ベースのVolumetricで綺麗な雲を描画するShaderです！  
 分かりやすく説明すると、3Dモデルデータ等で使用されているメッシュのように表面のみの描画ではなく、中身の詰まった雲を描画できます！  
 そのため、Skyboxに描かれている雲とは違って立体的で、より実在感があります！  
@@ -25,7 +25,7 @@
 ### 2.⚠️重要⚠️ 使用上の注意
 本商品を使用するためにいくつか注意すべき点があります。
 
-1. SceneのDepth Texture発行に関して
+1. SceneのDepth Texture発行に関して  
 本商品のShaderはUnityの深度情報を利用しているため、使用する際は
 - Directional Light (Realtime Mode, Shadow)
 - [VUdon - Depth Buffer Toolkit](https://github.com/Varneon/VUdon-DepthBufferToolkit)
@@ -36,13 +36,13 @@
 
 2. Cameraのクリッピング距離の設定
 
-![](Images/Clipping Failed.png)  
+![](Images/Clipping_Failed.png)  
 
-大きな雲を設置する場合にCameraのクリッピング距離を超えてしまい、正常に描画されない場合があるため
+	大きな雲を設置する場合にCameraのクリッピング距離を超えてしまい、正常に描画されない場合があるため
 
-![](Images/Camera Clipping Settings.png)  
+![](Images/CameraClippingSettings.png)  
 
-**Clipping PlanesのFar**を十分な距離に設定してください。
+	**Clipping PlanesのFar**を十分な距離に設定してください。
 
 3. 透過オブジェクトとの干渉
 
