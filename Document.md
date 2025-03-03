@@ -1,3 +1,6 @@
+- Table of Content
+{:toc}
+
 # Flexible Cloud Shader(FCS)
 ![](Images/FlexibleCloudShader_thumbnail.png)  
 物理ベースのVolumetricで綺麗な雲を描画するShaderです！  
@@ -168,18 +171,18 @@ GPU Instancingに対応しています。複数の全く同じMeshで同じMater
 	JitterにはBlue Noiseを利用しており、これにより密度関数やSDFのアーティファクト発生箇所を分かりにくくする機能を実現しています。開発初期に使用していたWhite Noiseと比較しても違和感の少ない見た目となっています。
 	- 雲の密度と大きさの関係  
 	Shader Transform内のScaleを小さくするほどRayが短くなり、雲の密度が上昇するため濃くなり、Scaleを大きくするほどRayが大きくなり、雲の密度が下がるため薄くなる特徴があります。
-	- Scaling機能について
+	- Scaling機能について  
 	通常、Raymarchingを扱う際に、PositionやRotationはRayを直接操作することで変更できますが、Scaleを変更すると距離場の整合性が失われ、正確に描画できなくなる問題があります。  
 	これに対して、独自開発のSpace Scaling Systemを使うことによってサイズを自由に操作することができます。
 - 負荷に関して
-	- Single Pass Stereo
+	- Single Pass Stereo  
 	VRで利用することを想定し、負荷軽減のため対応しています。
-	- GPU Instancing
+	- GPU Instancing  
 	複数の雲オブジェクトの使用を想定してGPU Instancingに対応しています。
-	- Raymarchingの軽量化施策
+	- Raymarchingの軽量化施策  
 	Raymarchingはピクセルごとにイテレーションがあるため基本的に高負荷で、Volumetric Cloudでは固定長であるため遠距離まで描画しようとすると負荷が跳ね上がる問題があります。  
 	これに対して、Bounds外の計算を省き、密度関数が負の値になった場合に計算を打ち切ることである程度軽量化しました。
-	- Noiseのテクスチャ化
+	- Noiseのテクスチャ化  
 	リアルタイムでNoiseを生成する方法と比較して、より忠実度の高い複雑なNoiseが利用できるようになり負荷も軽減することができました。
 - 利用者間で再配布可能なものについて
 	- 雲の形状カスタマイズについて  
