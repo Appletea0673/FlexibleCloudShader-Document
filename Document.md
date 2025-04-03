@@ -105,9 +105,11 @@ Shader側でPosition、Rotation、Scaleを調整できます。
 	- Max Iteration  
 	大きくするほど遠くの雲が途切れないようになりますが、負荷が増加します。  
 	通常用途では150程度、雲海や空の雲に使う場合は1000以下をおすすめします。
+
 | RayOffset:0 | RayOffset:20 |
 |---|---|
 |![](Images/RayOffset_1.png)|![](Images/RayOffset_2.png)|
+
 - Shape Settings  
 雲の形に関する設定項目です。
 	- Cloud Fineness  
