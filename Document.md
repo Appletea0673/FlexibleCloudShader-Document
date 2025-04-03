@@ -91,15 +91,23 @@ Shader側でPosition、Rotation、Scaleを調整できます。
 	- **Scale**  
 	見た目を変えずに拡大縮小できます。非常に小さい雲も正確に生成できます。
 - Raymarch Settings  
-描画計算の設定です。
-	- Ray Offset Length  
+描画計算の設定です。**負荷を減らすためにはこの設定を調整**してください。
+	- Light Ray Steps
+	ステップ数を減らすと見た目が単調になりますが、負荷は減少します。  
+	8以上はあまり見た目が変わらないため、8以下で利用することをおすすめします。
+  	- Jitter Scale  
 	大きくすることで、見た目の歪みをJitterに肩代わりさせて綺麗に見せることができます。  
 	大きくし過ぎると常にNoiseが見えるため、9～30程度の範囲で使うことをおすすめします。
+	- Ray Offset
+	視点から雲の描画が始まる距離を調整します。
 	- Step Size  
 	小さくするほど計算が細かくなり綺麗になりますが、負荷が増加します。
 	- Max Iteration  
 	大きくするほど遠くの雲が途切れないようになりますが、負荷が増加します。  
 	通常用途では150程度、雲海や空の雲に使う場合は1000以下をおすすめします。
+| RayOffset:0 | RayOffset:20 |
+|---|---|
+|![](Images/RayOffset_1.png)|![](Images/RayOffset_2.png)|
 - Shape Settings  
 雲の形に関する設定項目です。
 	- Cloud Fineness  
