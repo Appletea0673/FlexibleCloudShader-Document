@@ -75,7 +75,7 @@
 
 - Textures  
 この項目では雲生成に使うNoiseを読み込ませます。仕様を理解して自分でTextureを描ける猛者以外はPrefabのデフォルト状態で利用してください。
-- Common
+- Common  
 雲の共通設定です。
 	- Color・Shadow Color  
 	雲全体の色と影色の設定です。
@@ -97,10 +97,10 @@ Shader側でPosition、Rotation、Scaleを調整できます。
   	- Jitter Scale  
 	大きくすることで、見た目の歪みをJitterに肩代わりさせて綺麗に見せることができます。  
 	大きくし過ぎると常にNoiseが見えるため、9～30程度の範囲で使うことをおすすめします。
-	- Ray Offset
+	- Ray Offset  
 	視点から雲の描画が始まる距離を調整します。
-	- Auto Step Size
-	パフォーマンスを最適化するデフォルトの機能です。
+	- Auto Step Size  
+	パフォーマンスを最適化するデフォルトの機能です。  
 	**Boundsがとても大きい場合(20000程度が目安)は雲内部の密度が低下するため、チェックを外して使うことを推奨します。**
 	- Minimum Step Size Limit  
 	見た目の粗さを調整します。
