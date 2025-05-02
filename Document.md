@@ -184,6 +184,7 @@ GPU Instancingに対応しています。複数の全く同じMeshで同じMater
 	Depth Textureのエッジ部分の補正や、Scaling時の深度補正により正確な値が取れるようになっています。
 	- Jitterについて  
 	JitterにはBlue Noiseを利用しており、これにより密度関数やSDFのアーティファクト発生箇所を分かりにくくする機能を実現しています。開発初期に使用していたWhite Noiseと比較しても違和感の少ない見た目となっています。
+	更に、独自開発したIcosahedron Mappingアルゴリズムを用いることで、Stereo ViewでのNoiseの歪みや解像度依存性、視線方向に固定される問題を解決しています。
 	- 雲の密度と大きさの関係  
 	Shader Transform内のScaleを小さくするほどRayが短くなり、雲の密度が上昇するため濃くなり、Scaleを大きくするほどRayが大きくなり、雲の密度が下がるため薄くなる特徴があります。
 	- Scaling機能について  
