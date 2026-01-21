@@ -36,7 +36,8 @@
 	- Directional Light (Realtime Mode, Shadow)
 	- [VUdon - Depth Buffer Toolkit](https://github.com/Varneon/VUdon-DepthBufferToolkit)  
 	- [DepthTextureGen](https://onotchi.booth.pm/items/7899649)  
-	- 本製品に付属する「Depth Observer.prefab」  
+	- 本製品に付属する「Depth Observer.prefab」
+
 	のような手段でDepth Textureを発行してください。
 	この仕様上、VRSNS上のアクセサリーなどアバターに使用にする場合は利用できないワールドがあるため注意してください。
 
